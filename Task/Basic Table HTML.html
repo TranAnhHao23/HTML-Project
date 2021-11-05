@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Table HTML</title>
+</head>
+<style>
+  .formstyle{
+    font-family: Tahoma;
+  }
+</style>
+<body>
+<h1 >Order Form</h1>
+<div class="formstyle">
+  <p>
+    What would you like to buy?
+  </p>
+  <select name="buytager" id="select1">
+    <option value="A">Shirt</option>
+    <option value="B">Jeans</option>
+    <option value="C">T-Shirt</option>
+    <option value="D">Others</option>
+  </select>
+  <p>
+    How many would you like to order?
+  </p>
+  <form action="local">
+    <input type="radio" id="cheap">
+    <label for="cheap">1 - $10</label><br>
+    <input type="radio" id="normal">
+    <label for="normal">2 - $20</label><br>
+    <input type="radio" id="expensive">
+    <label for="expensive">3 - $25</label><br>
+  </form>
+  <p>
+    Name *
+  </p>
+  <form action="local">
+    <input type="text" id="fname" name="fname" value="FirstName" size="15">
+    <input type="text" id="lname" name="lname" value="LastName" size="15">
+  <p>
+    Email
+  </p>
+    <input type="text" id="email" name="email" size="15">
+  <p>
+    Phone Number
+  </p>
+
+   <p>
+     <input type="text" id="num" name="num" size="3"> -
+    <input type="text" id="num" name="num" size="3"> -
+    <input type="text" id="num" name="num" size="3">
+   </p>
+    <br><br>
+    <input type="submit" id="submit" name="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+</html>

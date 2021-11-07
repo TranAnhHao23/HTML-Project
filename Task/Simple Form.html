@@ -5,38 +5,76 @@
     <title>Simple Form Exercise</title>
 </head>
 <style>
-    top{
-    background-color: darkorange;
-    }
-    .top{
-    background-color: darkorange;
-    text-align: center;
-        font-family:Tahoma;
-    }
-    main{
 
+    table{
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding: 10px;
     }
-    .main{
-
+    th{
+        background-color: coral;
+        color: white;
+        padding: 5px;
     }
-    *{
-       ;
+    td{
+        background-color: white;
+    }
+    form{
+        background-color: aqua;
+        padding: 10px;
+        width: 400px;
+        height: 250px;
+    }
+    .col1{
+        color: blue;
+        text-align: right;
+    }
+    .row1{
+        color: coral;
     }
 </style>
-
 <body>
-<div id="top" class="top">
-<h2>
-    SỞ THÍCH CỦA BẠN
-</h2>
-    <p>
-    <form action="login">
+<form action="noname">
+    <table>
+        <tr>
+            <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+            <td class="col1">Họ và tên </td>
+            <td colspan="3"><input type="text" size="35"></td>
+        </tr>
+        <tr>
+            <td class="col1">Email</td>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="col1">Sở thích</td>
+            <td class="row1"><input type="checkbox">Thể thao</td>
+            <td class="row1"><input type="checkbox">Nghe nhạc</td>
+            <td class="row1"><input type="checkbox">Đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="row1"><input type="checkbox">Lướt web</td>
+            <td class="row1"><input type="checkbox">Chơi game</td>
+            <td class="row1"><input type="checkbox">Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3" class="row1"><input type="checkbox">Du lịch</td>
 
-    </form>
-    </p>
-</div>
-<div id="main" class="main">
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <input type="submit" value="Gửi thông tin"> &nbsp;
+                <input type="reset" value="Nhập lại">
+            </td>
 
-</div>
+        </tr>
+    </table>
+</form>
 </body>
+
 </html>
